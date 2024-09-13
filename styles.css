@@ -1,0 +1,201 @@
+:root {
+    /* Color Theme */
+    --primary-color: #0d0d0d; /* Dark Space */
+    --accent-color: #7f00ff; /* Purple Nebula */
+    --highlight-color: #ff0044; /* Red Galaxy */
+    --background-color: #000000; /* Black Space */
+    --text-color: #ffffff; /* White Stars */
+    --header-color: #ffffff; /* White Stars */
+    --button-color: #7f00ff; /* Purple Nebula */
+    --button-hover-color: #5f00cc; /* Darker Purple */
+    --border-color: #333333; /* Dark Gray */
+    --light-accent: #111111; /* Very Dark Gray */
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: radial-gradient(circle, #000000, #1a1a1a);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: var(--light-accent);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(255, 255, 255, 0.3);
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--header-color);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    background: #222; /* Dark Background for Inputs */
+    color: var(--text-color);
+}
+
+input:focus, textarea:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+button {
+    padding: 14px 24px;
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+    transform: scale(1.05);
+}
+
+.resume {
+    margin-top: 30px;
+    padding: 30px;
+    background-color: var(--light-accent);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+    font-family: 'Georgia', serif;
+    line-height: 1.8;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.resume:hover {
+    transform: translateY(-5px);
+}
+
+header.personal-info {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+}
+
+header.personal-info h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: var(--highlight-color);
+}
+
+header.personal-info p {
+    font-size: 1.2rem;
+    color: var(--header-color);
+}
+
+header.personal-info a {
+    color: var(--highlight-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header.personal-info a:hover {
+    color: var(--button-color);
+}
+
+section {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.6rem;
+    color: var(--header-color);
+    margin-bottom: 15px;
+    position: relative;
+    border-bottom: 3px solid var(--accent-color);
+    padding-bottom: 10px;
+}
+
+section h2::before {
+    content: '•';
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    position: absolute;
+    left: -20px;
+    top: 0;
+}
+
+section p, section ul {
+    font-size: 1rem;
+    margin-top: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+section p span {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--highlight-color);
+    font-weight: bolder;
+}
+
+section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+section ul li {
+    background-color: var(--light-accent);
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 6px;
+    color: var(--text-color);
+    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.1);
+}
+
+.editable {
+    border: 1px dashed var(--border-color);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.download {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 24px;
+    background-color: var(--highlight-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download:hover {
+    background-color: var(--button-hover-color);
+    transform: scale(1.05);
+}
